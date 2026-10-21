@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://d3yts6x6ssy8q"]
+
+[ext_resource type="Script" uid="uid://cxbre3l71pexg" path="res://interface.gd" id="1_tg63u"]
+
+[node name="Interface" type="CanvasLayer" unique_id=1150507276]
+script = ExtResource("1_tg63u")
+
+[node name="Inventario" type="HBoxContainer" parent="." unique_id=195599651]
+offset_left = 250.0
+offset_top = 475.0
+offset_right = 290.0
+offset_bottom = 515.0
+
+[node name="Combinar" type="Button" parent="." unique_id=1655068207]
+offset_left = 30.0
+offset_top = 475.0
+offset_right = 114.0
+offset_bottom = 506.0
+text = "Combinar"
+
+[node name="Aviso" type="Label" parent="." unique_id=967550690]
+offset_left = 30.0
+offset_top = 60.0
+offset_right = 930.0
+offset_bottom = 90.0
+text = "Colete os elementos e ajude a plantinha."
+
+[node name="PainelMissao" type="PanelContainer" parent="." unique_id=96605189]
+visible = false
+offset_left = 230.0
+offset_top = 120.0
+offset_right = 270.0
+offset_bottom = 160.0
+
+[node name="Caixa" type="VBoxContainer" parent="PainelMissao" unique_id=1831871379]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PainelMissao/Caixa" unique_id=1025428405]
+layout_mode = 2
+text = "MISSÃO CONCLUÍDA!  ★ ☆ ☆"
+
+[node name="Label2" type="Label" parent="PainelMissao/Caixa" unique_id=536801612]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+text = "Água (H₂O): dois átomos de hidrogênio e um de oxigênio. Está na torneira, na chuva e em quase tudo que você bebe."
+autowrap_mode = 2
+
+[node name="Continuar" type="Button" parent="PainelMissao/Caixa" unique_id=1864120268]
+layout_mode = 2
+text = "Continuar explorando"

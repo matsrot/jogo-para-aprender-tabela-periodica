@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cr4bfm6smfarf"]
+
+[ext_resource type="PackedScene" uid="uid://dow5e8klftxy0" path="res://scenes/Plataforma.tscn" id="1_5dgib"]
+[ext_resource type="PackedScene" uid="uid://b7tyar14fdni4" path="res://scenes/Player.tscn" id="2_al5x1"]
+[ext_resource type="PackedScene" uid="uid://w0rv36kuiv2b" path="res://scenes/Elemento.tscn" id="3_eogdn"]
+[ext_resource type="PackedScene" uid="uid://c4wfr8gk4d4n8" path="res://scenes/Planta.tscn" id="4_liwgf"]
+[ext_resource type="PackedScene" uid="uid://d3yts6x6ssy8q" path="res://scenes/interface.tscn" id="5_s8v6d"]
+
+[node name="Nivel1" type="Node2D" unique_id=1852558981]
+
+[node name="Plataforma" parent="." unique_id=697307590 instance=ExtResource("1_5dgib")]
+position = Vector2(0, 460)
+tamanho = Vector2(960, 80)
+
+[node name="Plataforma2" parent="." unique_id=2103883181 instance=ExtResource("1_5dgib")]
+position = Vector2(200, 380)
+
+[node name="Plataforma3" parent="." unique_id=97421680 instance=ExtResource("1_5dgib")]
+position = Vector2(520, 320)
+tamanho = Vector2(180, 24)
+
+[node name="Plataforma4" parent="." unique_id=1881453618 instance=ExtResource("1_5dgib")]
+position = Vector2(760, 250)
+tamanho = Vector2(150, 24)
+
+[node name="player" parent="." unique_id=535627637 instance=ExtResource("2_al5x1")]
+position = Vector2(100, 400)
+
+[node name="Elemento H" parent="." unique_id=1808746348 instance=ExtResource("3_eogdn")]
+position = Vector2(228, 332)
+
+[node name="Elemento O" parent="." unique_id=372767884 instance=ExtResource("3_eogdn")]
+position = Vector2(580, 272)
+simbolo = "O"
+
+[node name="Elemento Na" parent="." unique_id=1114627254 instance=ExtResource("3_eogdn")]
+position = Vector2(430, 400)
+simbolo = "Na"
+
+[node name="Planta" parent="." unique_id=1935126547 instance=ExtResource("4_liwgf")]
+position = Vector2(820, 187)
+
+[node name="Interface" parent="." unique_id=1150507276 instance=ExtResource("5_s8v6d")]

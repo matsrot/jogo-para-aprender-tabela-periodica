@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dow5e8klftxy0"]
+
+[ext_resource type="Script" uid="uid://b8386mdsk3auw" path="res://scenes/plataforma.gd" id="1_blxbr"]
+
+[node name="Plataforma" type="StaticBody2D" unique_id=697307590]
+script = ExtResource("1_blxbr")
